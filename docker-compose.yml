@@ -1,41 +1,45 @@
 version: "3"
 
 services:
-  postgres:
+  db:
     image: postgres:12.2
-    container_name: db
     restart: "always"
     ports:
       - 5432:5432
     env_file:
       - .env
     volumes:
-      - rustappoint_db:/var/lib/postgresql/data
-
-  nginx:
-    container_name: nginx
-    build:
-      context: .
-      dockerfile: ./nginx/Dockerfile
-    image: nginx
-    restart: always
-    ports:
-      - 80:80
-    depends_on:
-      - backend
-    command: nginx -g 'daemon off';
+      - db-data:/var/lib/postgresql/data
+    networks:
+      - net
 
   backend:
-    container_name: backend
     build:
       context: ./backend
       dockerfile: Dockerfile
-    hostname: server
+    restart: always
     ports:
-      - 8000:8000
-    volumes:
-      - ./rustappoint_backend
+      - "3000:3000"
     depends_on:
-      - postgres
+      - db
     env_file: .env
-    command: rustappoint
+    networks:
+      - net
+
+  frontend:
+    build:
+      context: frontend
+      dockerfile: Dockerfile
+    ports:
+      - "80:80"
+    restart: always
+    networks:
+      - net
+    depends_on:
+      - backend
+
+networks:
+  net:
+
+volumes:
+  db-data:

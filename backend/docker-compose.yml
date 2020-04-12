@@ -1,9 +1,9 @@
 version: "3"
 
 services:
-  postgres:
+  rustappoint-db:
     image: postgres:12.2
-    container_name: db
+    container_name: rustappoint-db
     restart: "always"
     ports:
       - 5432:5432

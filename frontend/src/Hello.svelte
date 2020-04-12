@@ -3,8 +3,10 @@
 
     let text = '';
 
+    const API_BASE_URL = 'http://localhost:3000/';
+
     onMount(async () => {
-        await fetch(`http://localhost:3000/`)
+        await fetch(API_BASE_URL)
                 .then(data => data.json())
                 .then(data => text = data['hello']);
     });
