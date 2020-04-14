@@ -11,11 +11,10 @@ hyper = "0.13"
 tokio = { version = "0.2.11", features = ["full"] }
 futures-util = { version = "0.3", default-features = false }
 env_logger = "0.7.1"
-diesel = { version = "1.4.4", features = ["chrono", "postgres", "r2d2", "uuidv07", "serde_json"] }
+diesel = { version = "1.4.4", features = ["chrono", "postgres", "r2d2", "uuidv07", "serde_json", "extras"] }
+r2d2 = "0.8.8"
 dotenv = "0.15.0"
 jsonwebtoken = "7.0.1"
 serde = "1.0.91"
 serde_derive = "1.0.104"
-
-db = { package = "db", path = "./src/db" }
-domain = { package = "domain", path = "./src/domain" }
+anyhow = "1.0.28"
