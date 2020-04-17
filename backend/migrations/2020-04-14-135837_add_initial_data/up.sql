@@ -1,11 +1,10 @@
 -- Your SQL goes here
 
-INSERT INTO users
-	VALUES (1, 'a@a.com', 'admin', 99),
-	       (2, 'd@d.com', 'doc', 10);
+INSERT INTO users(id, name, password, email)
+	VALUES (1, 'test', '', 'test@test.com');
 
-INSERT INTO doctors (id, name, email, sex, year, education, occupation, occupation2, occupation_spec, certificate, modalitet, modalitet2, phone, zoom, confirmed, dateUpdated, user_id)
-	VALUES (1, 'Petar Petrović', 'Petar Petrovic@dot.com', true, 1990, 4, 1, 'occ', 'spec', 0, 2, 'cert', '641294217', 'Z-00-M', false, 1586699282825, 2);
+INSERT INTO projects(id, name, user_id)
+	VALUES (1, 'READING LIST', 1);
 
-INSERT INTO timeslots (id, status, datetime, doctor_id)
-	VALUES (1, 10, 202004131548, 1);
+INSERT INTO tasks(id, content, status, created_time, updated_time, project_id)
+	VALUES (1, 'Moby Dick quotes https://www.goodreads.com/work/quotes/2409320-moby-dick-or-the-whale', 0, 1587162317, 1587162317, 1);
