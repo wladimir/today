@@ -8,4 +8,6 @@ pub async fn start() {
     println!("{}", database_url);
 
     let repository = Repository(Repo::new(&database_url));
+
+    println!("{}", repository);
 }
