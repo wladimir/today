@@ -22,14 +22,14 @@
 </script>
 
 <style global>
-    h1 {
-        @apply bg-blue-200;
+    div {
+        font-family: 'rubik';
     }
 </style>
 
-<h1 class="text-yellow">{text}</h1>
+<h1>{text}</h1>
 <Icon data={beer} />
-<div class="list">
+<div class="font-bold text-4xl text-primary_color">
     <SortableList
             {list}
             on:sort={sortList}
