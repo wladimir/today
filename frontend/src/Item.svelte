@@ -12,5 +12,5 @@
 </style>
 
 <h1>
-    {item.name}
+    {item}
 </h1>

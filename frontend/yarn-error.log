@@ -1,5 +1,5 @@
 Arguments: 
-  /Users/vlad/.nvm/versions/node/v13.9.0/bin/node /usr/local/Cellar/yarn/1.22.4/libexec/bin/yarn.js
+  /Users/vlad/.nvm/versions/node/v13.9.0/bin/node /usr/local/Cellar/yarn/1.22.4/libexec/bin/yarn.js run dev
 
 PATH: 
   /Users/vlad/.cargo/bin:/usr/local/opt/python/libexec/bin:/Users/vlad/.nvm/versions/node/v13.9.0/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/MacGPG2/bin:/Users/vlad/go/bin:/usr/local/opt/go/libexec/bin
