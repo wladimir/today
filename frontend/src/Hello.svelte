@@ -2,16 +2,13 @@
     import Item from './Item.svelte';
     import Icon from 'svelte-awesome';
     import beer from 'svelte-awesome/icons/beer';
+    import SortableList from './SortableList.svelte';
 
     import { onMount } from 'svelte';
 
     let text = 'abc';
 
-    let list = [
-        { id: 1, name: 'First Item' },
-        { id: 2, name: 'Second Item' },
-        { id: 3, name: 'Third Item' }
-    ];
+    let list = ['First Item', 'Second Item', 'Third Item'];
 
     const sortList = ev => {list = ev.detail;};
 
@@ -32,7 +29,10 @@
 
 <h1 class="text-yellow">{text}</h1>
 <Icon data={beer} />
-<div>
-
+<div class="list">
+    <SortableList
+            {list}
+            on:sort={sortList}
+    />
 </div>
 
