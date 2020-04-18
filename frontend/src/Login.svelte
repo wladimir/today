@@ -36,9 +36,9 @@
                             </div>
                         </form>
                         <div class="text-center mt-4">
-                            <a class="no-underline hover:underline text-blue-dark text-xs">
+                            <p class="no-underline hover:underline text-blue-dark text-xs">
                                 Forgot Your Password?
-                            </a>
+                            </p>
                         </div>
                     </div>
                 </div>

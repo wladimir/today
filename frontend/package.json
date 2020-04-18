@@ -17,7 +17,8 @@
     "rollup-plugin-terser": "^5.1.2",
     "svelte": "^3.0.0",
     "svelte-preprocess": "^3.7.1",
-    "tailwindcss": "^1.2.0"
+    "tailwindcss": "^1.2.0",
+    "rollup": "^1.12.0"
   },
   "dependencies": {
     "@fullhuman/postcss-purgecss": "^2.1.2",
