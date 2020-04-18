@@ -1,14 +1,16 @@
 <!--suppress CssInvalidAtRule -->
 <script>
     import Hello from './Hello.svelte';
+    import Login from './Login.svelte';
 </script>
 
 <svelte:head>
-    <title>Rustappoint</title>
+    <title>Productive Notes</title>
 </svelte:head>
 
 <main>
     <Hello />
+    <!--    <Login />-->
 </main>
 
 <style global>

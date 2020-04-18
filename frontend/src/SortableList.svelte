@@ -85,7 +85,7 @@
 </style>
 
 {#if list && list.length}
-    <ul class="font-bold text-red-500 text-4xl">
+    <ul>
         {#each list as item, index (getKey(item))}
             <li
                     data-index={index}
