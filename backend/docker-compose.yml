@@ -1,16 +1,16 @@
 version: "3"
 
 services:
-  rustappoint-db:
+  today-db:
     image: postgres:12.2
-    container_name: rustappoint-db
+    container_name: today-db
     restart: "always"
     ports:
       - 5432:5432
     env_file:
       - .env
     volumes:
-      - rustappoint_db:/var/lib/postgresql/data
+      - today_db:/var/lib/postgresql/data
 
 volumes:
-  rustappoint_db:
+  today_db:

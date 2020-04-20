@@ -2,13 +2,17 @@
 <script>
     import Hello from './Hello.svelte';
     import Login from './Login.svelte';
+    import Header from './Header.svelte';
+    import MainView from './MainView.svelte';
 </script>
 
 <svelte:head>
-    <title>Productive Notes</title>
+    <title>Today</title>
 </svelte:head>
 
 <main>
+    <Header />
+    <MainView />
     <Hello />
     <!--    <Login />-->
 </main>
