@@ -24,6 +24,6 @@
     "@fullhuman/postcss-purgecss": "^2.1.2",
     "page": "^1.11.5",
     "sirv-cli": "^0.4.4",
-    "svelte-awesome": "^2.3.0"
+    "c": "^2.3.0"
   }
 }
