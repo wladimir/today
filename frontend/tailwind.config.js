@@ -5,12 +5,12 @@ module.exports = {
             textColor: {
                 primary: 'var(--color-text-primary)',
                 secondary: 'var(--color-text-secondary)',
-                secondary: 'var(--color-text-tertiary)',
+                tertiary: 'var(--color-text-tertiary)',
             },
             backgroundColor: {
                 primary: 'var(--color-bg-primary)',
                 secondary: 'var(--color-bg-secondary)',
-                secondary: 'var(--color-bg-tertiary)',
+                tertiary: 'var(--color-bg-tertiary)',
             },
             fontFamily: {
                 display: 'var(--font-display)',
