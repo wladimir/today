@@ -45,5 +45,9 @@
     @tailwind base;
     @tailwind components;
     @tailwind utilities;
+
+    * {
+        font-family: 'rubik';
+    }
 </style>
 
