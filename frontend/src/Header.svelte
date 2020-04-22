@@ -12,5 +12,6 @@
                 on:click={handleClick}>
             <Icon data={heart}/>
         </button>
+        <div class="bg-secondary text-secondary">YO THEME</div>
     </div>
 </nav>

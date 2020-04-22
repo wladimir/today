@@ -1,18 +1,18 @@
 :root {
-    --color-bg-primary: #FFFFFF;
-    --color-bg-secondary: #232946;
+    --color-bg-primary: #ed64a6;
+    --color-bg-secondary: #2d2b57;
 
-    --color-text-primary: #ff6e6c;
-    --color-text-secondary: #eebbc3;
+    --color-text-primary: #ffffff;
+    --color-text-secondary: #78d092;
 }
 
 /*! purgecss start ignore */
 .theme-dark {
-    --color-bg-primary: #ff6e6c;
-    --color-bg-secondary: #927ac6;
+    --color-bg-primary: #ffffff;
+    --color-bg-secondary: #78d092;
 
-    --color-text-primary: #FFFFFF;
-    --color-text-secondary: #2cb67d;
+    --color-text-primary: #ed64a6;
+    --color-text-secondary: #2d2b57;
 }
 
 /*! purgecss end ignore */
