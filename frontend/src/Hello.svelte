@@ -1,18 +1,23 @@
 <script>
-    import Badge from './Badge.svelte';
-    import Icon from 'svelte-awesome';
-    import beer from 'svelte-awesome/icons/beer';
-    import SortableList from './SortableList.svelte';
+    import Switch from "./Switch.svelte";
+    import Badge from "./Badge.svelte";
+    import Icon from "svelte-awesome";
+    import beer from "svelte-awesome/icons/beer";
+    import SortableList from "./SortableList.svelte";
 
-    import { onMount } from 'svelte';
+    let uno = false;
 
-    let text = 'abc';
+    $: values = { uno };
 
-    let list = ['First Item', 'Second Item', 'Third Item'];
+    import { onMount } from "svelte";
+
+    let text = "abc";
+
+    let list = ["First Item", "Second Item", "Third Item"];
 
     const sortList = ev => {list = ev.detail;};
 
-    const API_BASE_URL = 'http://localhost:3000/';
+    const API_BASE_URL = "http://localhost:3000/";
 
     onMount(async () => {
         //     await fetch(API_BASE_URL)
@@ -30,4 +35,4 @@
     />
 </div>
 <Badge />
-
+<Switch bind:checked="{uno}" id="uno" text="uno" />
