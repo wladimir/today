@@ -1,31 +1,32 @@
 <!--suppress CssInvalidAtRule -->
 <script>
-    import Header from './Header.svelte';
-    import MainView from './MainView.svelte';
+    import Hello from "./Hello.svelte";
+    import Header from "./Header.svelte";
+    import MainView from "./MainView.svelte";
 
-    import { THEME } from './Constants';
+    import { THEME } from "./Constants";
 
-    import { onMount } from 'svelte';
+    import { onMount } from "svelte";
 
     let d = document.documentElement;
     let themeStorage;
 
     const handleClick = () => {
-        if (d.classList.contains('theme-dark')) {
-            d.classList.remove('theme-dark');
+        if (d.classList.contains("theme-dark")) {
+            d.classList.remove("theme-dark");
             localStorage.removeItem(THEME);
         } else {
-            d.classList.add('theme-dark');
-            localStorage.setItem(THEME, 'dark');
-            themeStorage = 'dark';
+            d.classList.add("theme-dark");
+            localStorage.setItem(THEME, "dark");
+            themeStorage = "dark";
         }
     };
 
     onMount(async () => {
         themeStorage = localStorage.getItem(THEME);
 
-        if (themeStorage === 'dark') {
-            d.classList.add('theme-dark');
+        if (themeStorage === "dark") {
+            d.classList.add("theme-dark");
         }
     });
 </script>
@@ -37,7 +38,7 @@
 <main>
     <Header {handleClick} />
     <MainView />
-    <!--    <Hello />-->
+    <Hello />
     <!--    <Login />-->
 </main>
 
