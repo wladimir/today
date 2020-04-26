@@ -3,5 +3,8 @@
   "arrowParens": "always",
   "printWidth": 120,
   "singleQuote": true,
-  "trailingComma": "es5"
+  "trailingComma": "es5",
+  "svelteSortOrder": "styles-scripts-markup",
+  "svelteStrictMode": true,
+  "svelteBracketNewLine": true
 }
