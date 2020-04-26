@@ -55,18 +55,15 @@
     );
   });
 
-  // Start the router
   router.start();
 </script>
 
-<!--prettier-ignore-->
-<!--suppress CssInvalidAtRule -->
 <svelte:head>
   <title>Today</title>
 </svelte:head>
 
 <main>
-  <svelte:component this="{page}" />
+  <svelte:component this={page} params={params}/>
 
   <Header {handleClick} />
   <Home />

@@ -1,5 +1,5 @@
 <script>
-
+ export let params
 </script>
 
-<nav></nav>
+<nav>{params}</nav>

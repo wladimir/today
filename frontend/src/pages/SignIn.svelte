@@ -1,3 +1,7 @@
+<script>
+  export let params
+</script>
+
 <body class="h-screen overflow-hidden flex items-center justify-center" style="background: #edf2f7;">
   <div class="bg-blue-400 h-screen w-screen">
     <div class="flex flex-col items-center flex-1 h-full justify-center px-4 sm:px-0">
