@@ -1,8 +1,8 @@
 <!--suppress CssInvalidAtRule -->
 <script>
-    import Hello from "./Hello.svelte";
-    import Header from "./Header.svelte";
-    import MainView from "./MainView.svelte";
+    import Hello from "./components/Hello.svelte";
+    import Header from "./components/Header.svelte";
+    import Home from "./pages/Home.svelte";
 
     import { THEME } from "./Constants";
 
@@ -37,7 +37,7 @@
 
 <main>
     <Header {handleClick} />
-    <MainView />
+    <Home />
     <Hello />
     <!--    <Login />-->
 </main>
