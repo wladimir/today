@@ -28,7 +28,7 @@
   });
 </script>
 
-<h1 class="pattern-checks-sm">{text}</h1>
+<h1 class="underline">{text}</h1>
 <Icon data="{beer}" />
 <div class="font-bold text-4xl text-primary pattern-checks-sm">
   <SortableList {list} on:sort="{sortList}" />
