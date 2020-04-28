@@ -7,6 +7,7 @@ impl Password {}
 pub struct User {
     pub id: u32,
     pub email: String,
+    pub profile: Profile,
 }
 
 #[derive(Clone, Debug, PartialEq)]
