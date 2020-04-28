@@ -2,6 +2,7 @@ mod app;
 mod auth;
 mod db;
 mod models;
+mod errors;
 
 #[tokio::main]
 async fn main() {

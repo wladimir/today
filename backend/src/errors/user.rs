@@ -1,9 +1,4 @@
-#[derive(thiserror::Error, Debug)]
-#[error("Something went wrong.")]
-pub struct DatabaseError {
-    #[from]
-    source: anyhow::Error,
-}
+use crate::errors::DatabaseError;
 
 #[derive(thiserror::Error, Debug)]
 #[error("Failed to process password.")]
@@ -24,7 +19,7 @@ pub enum GetUserError {
 }
 
 #[derive(thiserror::Error, Debug)]
-pub enum LoginError {
+pub enum SignInError {
     #[error("There is no user with the email and password you specified")]
     NotFound,
     #[error("Failed to process password")]
