@@ -8,13 +8,6 @@ CREATE TABLE users
     email           character varying(255) NOT NULL
 );
 
-CREATE TABLE projects
-(
-    id          SERIAL PRIMARY KEY,
-    name        character varying(255) NOT NULL,
-    user_id     integer                NOT NULL
-);
-
 CREATE TABLE tasks
 (
     id              SERIAL PRIMARY KEY,
@@ -22,12 +15,9 @@ CREATE TABLE tasks
     status          integer NOT NULL,
     created_time    bigint  NOT NULL,
     updated_time    bigint  NOT NULL,
-    project_id      integer NOT NULL
+    user_id         integer NOT NULL
 );
 
-ALTER TABLE ONLY projects
-    ADD CONSTRAINT fk_projects_user_id FOREIGN KEY (user_id) REFERENCES users(id) ON UPDATE RESTRICT ON DELETE RESTRICT;
-
 ALTER TABLE ONLY tasks
-    ADD CONSTRAINT fk_tasks_project_id FOREIGN KEY (project_id) REFERENCES projects(id) ON UPDATE RESTRICT ON DELETE RESTRICT;
+    ADD CONSTRAINT fk_tasks_project_id FOREIGN KEY (user_id) REFERENCES users(id) ON UPDATE RESTRICT ON DELETE RESTRICT;
 
