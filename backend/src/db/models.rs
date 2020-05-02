@@ -1,4 +1,5 @@
-use crate::schema::*;
+use diesel::Queryable;
+use serde::{Deserialize, Serialize};
 
 #[derive(Queryable, Serialize, Deserialize, Debug, Clone, PartialEq)]
 pub struct User {
