@@ -1,0 +1,40 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "com.mycompany.myapp"
+    },
+    "jhipsterVersion": "6.8.0",
+    "applicationType": "monolith",
+    "baseName": "backend",
+    "packageName": "com.mycompany.myapp",
+    "packageFolder": "com/mycompany/myapp",
+    "serverPort": "8080",
+    "authenticationType": "jwt",
+    "cacheProvider": "caffeine",
+    "enableHibernateCache": false,
+    "websocket": "spring-websocket",
+    "databaseType": "mongodb",
+    "devDatabaseType": "mongodb",
+    "prodDatabaseType": "mongodb",
+    "searchEngine": false,
+    "messageBroker": false,
+    "serviceDiscoveryType": false,
+    "buildTool": "gradle",
+    "enableSwaggerCodegen": false,
+    "jwtSecretKey": "MWQ5OGU0OGJkN2FhN2Q2NDRmZDlkNTA0MGQ3NDQ3MzA0MDQ1ZGE3ZGIwOTc1NDJlZmE3YmU0MTRlZmE5ZmFkODE3YWRkZTg3YmE3ZTIxZTA3NjQ1MDJjNWE1MDcxMjNjNTlkNjE1NDZiZTE5MTRmZDNmZGNiYWY5NTlhYzE3MDk=",
+    "embeddableLaunchScript": false,
+    "useSass": true,
+    "clientPackageManager": "yarn",
+    "clientFramework": "react",
+    "clientTheme": "journal",
+    "clientThemeVariant": "dark",
+    "creationTimestamp": 1588770964959,
+    "testFrameworks": [],
+    "jhiPrefix": "jhi",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": [],
+    "enableTranslation": false,
+    "blueprints": []
+  }
+}
